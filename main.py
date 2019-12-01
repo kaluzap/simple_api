@@ -65,4 +65,8 @@ def api_id():
     return jsonify(results)
 
 
-app.run()
+#app.run()
+
+#this allows to access the API from local network with the ip:
+#for example: http://192.168.0.3:5000/api/v1/resources/books/all
+app.run(debug=True,host='0.0.0.0')   
